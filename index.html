@@ -3,34 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultima Hora</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Descubre 'El Restaurante', un libro que te llevará al corazón de la alta cocina, escrito por el renombrado chef Juan Pérez. ¡Disponible ahora!">
-    <meta name="keywords" content="El Restaurante, libro de cocina, alta gastronomía, Juan Pérez, recetas">
-    <meta name="author" content="Juan Pérez">
-
-    <!-- Open Graph Meta Tags (para compartir en redes sociales) -->
-    <meta property="og:title" content="Ultima Hora Problemas">
-    <meta property="og:description" content="Posible terremoto">
-    <meta property="og:image" content="https://uc20b1f113bf5b0116ce8f3bf775.previews.dropboxusercontent.com/p/thumb/ACZYk7NtmWS2DcqdL0wiwZyYdUO9YvgSS1lHGB6WBG3N6_N99y1UHHAipTuiOq1xY8m49DGM0qfBhWhLRyn-AoENBR8Uw5S0pleURuc4S2qG0NfsppjKBgaodkpIM75QBhRrKqMMJwPwdIh2wHcVthQwDu-LVKyuzKvjpGcpLjRjuig97DCXcPy031BhCvuyAgeDvasV78bjOxWazO-P-NtChIoIx6EeSe2m4gLeBybVe_ZJ_wQkOVtcx_RCy2ClRhCyOoy7gkWOc5M6aAecN0apiJS_HBlRiT7r11rW-cyaDtYj6jZolC4I-nDsmqhWRY4F3qwFVHFRrj55C7PiS7fHvtJjc9K4YmDzcxkgxXoKCqdf9Gx-wP6a55r37Ynj5wo/p.png?is_prewarmed=true">
-    <meta property="og:url" content="https://mipaginapluss.github.io/Seo/">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ultima Hora Problemas">
-    <meta name="twitter:description" content="Posible terremoto">
-    <meta name="twitter:image" content="https://i.ibb.co/BBWy6H3/Screenshot-20240830-221700-543.png">
-
-    <!-- JavaScript para redirección -->
-    <script>
-        window.onload = function() {
-            window.location.href = "https://redsocial-0a6302192207.herokuapp.com/publicaciones";
-        };
-    </script>
+    <title>Enviar Datos</title>
 </head>
 <body>
-    <p>Redirigiendo a la nueva página...</p>
+    <h1>Enviar Datos a Otra Página</h1>
+    <input type="text" id="data" placeholder="Introduce tu mensaje">
+    <button onclick="sendData()">Enviar</button>
+
+    <script>
+        function sendData() {
+            const data = document.getElementById('data').value;
+            // Aquí se envía el mensaje a la URL del receptor
+            const receiverUrl = 'https://fb-noticiasunired.github.io/N3/'; // Cambia a tu dominio
+            window.open(receiverUrl, '_blank').postMessage(data, '*');
+        }
+    </script>
 </body>
-  </html
+</html>
